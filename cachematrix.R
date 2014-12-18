@@ -102,4 +102,6 @@ test2 <- function () {
     tmp <- cacheSolve(h)
     invisible (tmp)
 }
+
+## Thanks for your attention :)
  
