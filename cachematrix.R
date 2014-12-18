@@ -14,9 +14,10 @@
 #[2,]    0    0    1
 #[3,]   -1    1    1
 
-# h = makeCacheMatrix(x)
-# cacheSolve (h)    #First time calculates inverse
-# cacheSovle (h)    #Next time returns cached inverse
+# Usage:
+# h = makeCacheMatrix(x) # Create a makeCacheMatrix with matrix x
+# cacheSolve (h)         # First time calculates inverse
+# cacheSovle (h)         # Next time returns cached inverse
 
 
 # function makeCacheMatrix
@@ -88,7 +89,7 @@ test1 <- function () {
     print (tmp)
 }
 
-# Test a big matrix 1000x1000 (1 Sec with i5)
+# Test a big matrix 1000x1000
 test2 <- function () {
     message ("Creating big matrix...")
     x <- matrix (rnorm(n=1000000), ncol=1000)
